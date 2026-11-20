@@ -1,0 +1,30 @@
+Built successfully. GUI: java -cp build modelCheckCTL.Main --gui
+Model 1.txt: 84 passed, 0 failed
+Model 2.txt: 24 passed, 0 failed
+Model 3.txt: 40 passed, 0 failed
+Model 4.txt: 9 passed, 0 failed
+Model 5.txt: 14 passed, 0 failed
+Model 6.txt: 14 passed, 0 failed
+Model 7.txt: 14 passed, 0 failed
+microwave.txt: 13 passed, 0 failed
+Broken Model 1: rejected with line number
+Broken Model 2: rejected with line number
+Broken Model 3: rejected with line number
+Broken Model 4: rejected with line number
+Broken Model 5: rejected with line number
+Broken Model 6: rejected with line number
+Broken Model 7: rejected with line number
+Broken Model 8: rejected with line number
+Invalid formula Gp: rejected
+Invalid formula AGAp: rejected
+Invalid formula AGp or not: rejected
+Invalid formula EFGr: rejected
+Invalid formula A not G not p: rejected
+Invalid formula F(r U q): rejected
+Invalid formula AEFt: rejected
+Property 'EXq' HOLDS in state s1
+Satisfying states: [s1, s4]
+Property 'EXq' DOES NOT HOLD in state s2
+Satisfying states: [s1, s4]
+Detailed report: 212 passed, 0 failed in docs/DetailedTestResults.csv
+ALL TEST GROUPS PASSED

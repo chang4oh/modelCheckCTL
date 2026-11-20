@@ -1,0 +1,13 @@
+s1;AG(Start -> AF Heat);False
+s1;not EF(Start and EG not Heat);False
+s1;EF(Start and EG not Heat);True
+s1;EG not Heat;True
+s3;EG not Heat;True
+s2;EG not Heat;True
+s5;EG not Heat;True
+s4;EG not Heat;False
+s6;EG not Heat;False
+s7;EG not Heat;False
+s7;Heat;True
+s5;Error;True
+s6;EF Heat;True

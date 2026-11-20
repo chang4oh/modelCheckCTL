@@ -1,0 +1,20 @@
+s1, s2, s3, s4, s5, s6, s7;
+t1 : s1 - s2,
+t2 : s1 - s3,
+t3 : s2 - s5,
+t4 : s5 - s2,
+t5 : s5 - s3,
+t6 : s3 - s1,
+t7 : s3 - s6,
+t8 : s6 - s7,
+t9 : s7 - s4,
+t10 : s4 - s4,
+t11 : s4 - s3,
+t12 : s4 - s1;
+s1 : ,
+s2 : Start Error,
+s3 : Close,
+s4 : Close Heat,
+s5 : Start Close Error,
+s6 : Start Close,
+s7 : Start Close Heat;

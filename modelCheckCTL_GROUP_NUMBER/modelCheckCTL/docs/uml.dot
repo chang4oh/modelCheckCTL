@@ -1,0 +1,29 @@
+digraph UML {
+  graph [rankdir=TB, pad=.2, nodesep=.6, ranksep=.9, bgcolor=white, fontname="DejaVu Sans", label="CTL Model Checker - Original Java Class Diagram", labelloc=t, fontsize=22];
+  node [shape=record, style="rounded,filled", fillcolor="#F1F6FB", color="#5E7D9A", penwidth=1.3, fontname="DejaVu Sans", fontsize=10, margin=".13,.13"];
+  edge [color="#687F94", fontname="DejaVu Sans", fontsize=9, arrowsize=.65];
+  Main [label="{Main|+ main(args): void}" fillcolor="#E4EDF7"];
+  MainWindow [label="{MainWindow : JFrame|- filename: JTextField\l- state: JComboBox\l- formula: JTextField\l- output: JTextArea\l|+ setModel(...)\l+ currentState(): String\l+ currentFormula(): String\l+ showError(message): void\l}"];
+  MainController [label="{MainController|- window: MainWindow\l- model: KripkeStructure\l|+ load(path): void\l- openModel(): void\l- checkFormula(): void\l}"];
+  State [label="{State|- id: String\l- atoms: Set\l|+ id(): String\l+ atoms(): Set\l+ hasAtom(name): boolean\l}"];
+  Transition [label="{Transition|- name: String\l- from: String\l- to: String\l|+ name(): String\l+ from(): String\l+ to(): String\l}"];
+  KripkeStructure [label="{KripkeStructure|- states: Map\l- transitions: List\l- outgoing: Map\l|+ states(): Map\l+ transitions(): List\l+ successors(id): Set\l+ contains(id): boolean\l}"];
+  Formula [label="{Formula|- op: Op\l- atom: String\l- left: Formula\l- right: Formula\l|+ atom(name): Formula\l+ unary(op, child): Formula\l+ binary(op, left, right): Formula\l}"];
+  ModelChecker [label="{ModelChecker|- model: KripkeStructure\l- cache: IdentityHashMap\l|+ satisfyingStates(formula): Set\l+ holds(state, formula): boolean\l- least(...): Set\l- greatest(...): Set\l}"];
+  KripkeParser [label="{KripkeParser|+ parseFile(path): KripkeStructure\l+ parse(text): KripkeStructure\l}"];
+  FormulaParser [label="{FormulaParser|+ parse(text): Formula\l- lex(text): List\l- implication(): Formula\l- unary(): Formula\l}"];
+  ModelFormatException [label="{ModelFormatException : Exception|- line: int\l|+ line(): int\l}"];
+  Main -> MainWindow [label="creates"];
+  Main -> MainController [label="creates"];
+  MainController -> MainWindow [label="controls"];
+  MainController -> KripkeParser [label="uses"];
+  MainController -> FormulaParser [label="uses"];
+  MainController -> ModelChecker [label="uses"];
+  KripkeParser -> KripkeStructure [label="constructs"];
+  KripkeParser -> ModelFormatException [label="throws"];
+  KripkeStructure -> State [arrowhead=diamond, label="1 .. many"];
+  KripkeStructure -> Transition [arrowhead=diamond, label="0 .. many"];
+  FormulaParser -> Formula [label="builds AST"];
+  ModelChecker -> KripkeStructure [label="reads"];
+  ModelChecker -> Formula [label="evaluates"];
+}

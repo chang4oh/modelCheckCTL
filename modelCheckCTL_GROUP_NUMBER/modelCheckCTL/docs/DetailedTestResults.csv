@@ -1,0 +1,213 @@
+model,state,formula,expected,actual,status
+"Model 1.txt","s1","EGp and AGq",false,false,PASS
+"Model 1.txt","s2","EGp and AGq",false,false,PASS
+"Model 1.txt","s3","EGp and AGq",false,false,PASS
+"Model 1.txt","s4","EGp and AGq",false,false,PASS
+"Model 1.txt","s1","(not AGp) or EFq",true,true,PASS
+"Model 1.txt","s2","(not AGp) or EFq",true,true,PASS
+"Model 1.txt","s3","(not AGp) or EFq",true,true,PASS
+"Model 1.txt","s4","(not AGp) or EFq",true,true,PASS
+"Model 1.txt","s1","EG(r->t)",true,true,PASS
+"Model 1.txt","s2","EG(r->t)",true,true,PASS
+"Model 1.txt","s3","EG(r->t)",true,true,PASS
+"Model 1.txt","s4","EG(r->t)",true,true,PASS
+"Model 1.txt","s1","AX(r->p)",false,false,PASS
+"Model 1.txt","s2","AX(r->p)",true,true,PASS
+"Model 1.txt","s3","AX(r->p)",true,true,PASS
+"Model 1.txt","s4","AX(r->p)",false,false,PASS
+"Model 1.txt","s1","AXq",false,false,PASS
+"Model 1.txt","s2","AXq",false,false,PASS
+"Model 1.txt","s3","AXq",false,false,PASS
+"Model 1.txt","s4","AXq",true,true,PASS
+"Model 1.txt","s1","EXq",true,true,PASS
+"Model 1.txt","s2","EXq",false,false,PASS
+"Model 1.txt","s3","EXq",false,false,PASS
+"Model 1.txt","s4","EXq",true,true,PASS
+"Model 1.txt","s1","not AXq",true,true,PASS
+"Model 1.txt","s2","not AXq",true,true,PASS
+"Model 1.txt","s3","not AXq",true,true,PASS
+"Model 1.txt","s4","not AXq",false,false,PASS
+"Model 1.txt","s1","not EXq",false,false,PASS
+"Model 1.txt","s2","not EXq",true,true,PASS
+"Model 1.txt","s3","not EXq",true,true,PASS
+"Model 1.txt","s4","not EXq",false,false,PASS
+"Model 1.txt","s1","A(pUq)",true,true,PASS
+"Model 1.txt","s2","A(pUq)",true,true,PASS
+"Model 1.txt","s3","A(pUq)",false,false,PASS
+"Model 1.txt","s4","A(pUq)",false,false,PASS
+"Model 1.txt","s1","E(pUq)",true,true,PASS
+"Model 1.txt","s2","E(pUq)",true,true,PASS
+"Model 1.txt","s3","E(pUq)",false,false,PASS
+"Model 1.txt","s4","E(pUq)",false,false,PASS
+"Model 1.txt","s1","AXq and A(pUq)",false,false,PASS
+"Model 1.txt","s2","AXq and A(pUq)",false,false,PASS
+"Model 1.txt","s3","AXq and A(pUq)",false,false,PASS
+"Model 1.txt","s4","AXq and A(pUq)",false,false,PASS
+"Model 1.txt","s1","AXq or A(pUq)",true,true,PASS
+"Model 1.txt","s2","AXq or A(pUq)",true,true,PASS
+"Model 1.txt","s3","AXq or A(pUq)",false,false,PASS
+"Model 1.txt","s4","AXq or A(pUq)",true,true,PASS
+"Model 1.txt","s1","EFr",true,true,PASS
+"Model 1.txt","s2","EFr",true,true,PASS
+"Model 1.txt","s3","EFr",true,true,PASS
+"Model 1.txt","s4","EFr",true,true,PASS
+"Model 1.txt","s1","AFr",true,true,PASS
+"Model 1.txt","s2","AFr",true,true,PASS
+"Model 1.txt","s3","AFr",true,true,PASS
+"Model 1.txt","s4","AFr",true,true,PASS
+"Model 1.txt","s1","EGt",false,false,PASS
+"Model 1.txt","s2","EGt",false,false,PASS
+"Model 1.txt","s3","EGt",false,false,PASS
+"Model 1.txt","s4","EGt",false,false,PASS
+"Model 1.txt","s1","AGq",false,false,PASS
+"Model 1.txt","s2","AGq",false,false,PASS
+"Model 1.txt","s3","AGq",false,false,PASS
+"Model 1.txt","s4","AGq",false,false,PASS
+"Model 1.txt","s1","AX((EFp)or(AFr))",true,true,PASS
+"Model 1.txt","s2","AX((EFp)or(AFr))",true,true,PASS
+"Model 1.txt","s3","AX((EFp)or(AFr))",true,true,PASS
+"Model 1.txt","s4","AX((EFp)or(AFr))",true,true,PASS
+"Model 1.txt","s1","EX((AFp)or(EFr))",true,true,PASS
+"Model 1.txt","s2","EX((AFp)or(EFr))",true,true,PASS
+"Model 1.txt","s3","EX((AFp)or(EFr))",true,true,PASS
+"Model 1.txt","s4","EX((AFp)or(EFr))",true,true,PASS
+"Model 1.txt","s1","A(pUA(qUr))",false,false,PASS
+"Model 1.txt","s2","A(pUA(qUr))",true,true,PASS
+"Model 1.txt","s3","A(pUA(qUr))",false,false,PASS
+"Model 1.txt","s4","A(pUA(qUr))",false,false,PASS
+"Model 1.txt","s1","E(A(qUr)Ut)",false,false,PASS
+"Model 1.txt","s2","E(A(qUr)Ut)",true,true,PASS
+"Model 1.txt","s3","E(A(qUr)Ut)",false,false,PASS
+"Model 1.txt","s4","E(A(qUr)Ut)",true,true,PASS
+"Model 1.txt","s1","AG(p->A(pU(not p and A(not pUq))))",true,true,PASS
+"Model 1.txt","s2","AG(p->A(pU(not p and A(not pUq))))",true,true,PASS
+"Model 1.txt","s3","AG(p->A(pU(not p and A(not pUq))))",true,true,PASS
+"Model 1.txt","s4","AG(p->A(pU(not p and A(not pUq))))",true,true,PASS
+"Model 2.txt","s0","AFq",true,true,PASS
+"Model 2.txt","s1","AFq",false,false,PASS
+"Model 2.txt","s2","AFq",true,true,PASS
+"Model 2.txt","s3","AFq",true,true,PASS
+"Model 2.txt","s0","AG(EF(p or r))",true,true,PASS
+"Model 2.txt","s1","AG(EF(p or r))",true,true,PASS
+"Model 2.txt","s2","AG(EF(p or r))",true,true,PASS
+"Model 2.txt","s3","AG(EF(p or r))",true,true,PASS
+"Model 2.txt","s0","EXr",true,true,PASS
+"Model 2.txt","s1","EXr",true,true,PASS
+"Model 2.txt","s2","EXr",true,true,PASS
+"Model 2.txt","s3","EXr",false,false,PASS
+"Model 2.txt","s0","EX(EXr)",true,true,PASS
+"Model 2.txt","s1","EX(EXr)",true,true,PASS
+"Model 2.txt","s2","EX(EXr)",true,true,PASS
+"Model 2.txt","s3","EX(EXr)",true,true,PASS
+"Model 2.txt","s0","AXr",true,true,PASS
+"Model 2.txt","s1","AXr",false,false,PASS
+"Model 2.txt","s2","AXr",false,false,PASS
+"Model 2.txt","s3","AXr",false,false,PASS
+"Model 2.txt","s0","AG(AFq)",false,false,PASS
+"Model 2.txt","s1","AG(AFq)",false,false,PASS
+"Model 2.txt","s2","AG(AFq)",false,false,PASS
+"Model 2.txt","s3","AG(AFq)",false,false,PASS
+"Model 3.txt","s1","AGp",false,false,PASS
+"Model 3.txt","s2","AGp",false,false,PASS
+"Model 3.txt","s3","AGp",false,false,PASS
+"Model 3.txt","s4","AGp",false,false,PASS
+"Model 3.txt","s5","AGp",true,true,PASS
+"Model 3.txt","s6","AGp",true,true,PASS
+"Model 3.txt","s7","AGp",true,true,PASS
+"Model 3.txt","s8","AGp",true,true,PASS
+"Model 3.txt","s9","AGp",true,true,PASS
+"Model 3.txt","s10","AGp",true,true,PASS
+"Model 3.txt","s1","EGp",false,false,PASS
+"Model 3.txt","s2","EGp",true,true,PASS
+"Model 3.txt","s3","EGp",false,false,PASS
+"Model 3.txt","s4","EGp",false,false,PASS
+"Model 3.txt","s5","EGp",true,true,PASS
+"Model 3.txt","s6","EGp",true,true,PASS
+"Model 3.txt","s7","EGp",true,true,PASS
+"Model 3.txt","s8","EGp",true,true,PASS
+"Model 3.txt","s9","EGp",true,true,PASS
+"Model 3.txt","s10","EGp",true,true,PASS
+"Model 3.txt","s1","AGq",false,false,PASS
+"Model 3.txt","s2","AGq",false,false,PASS
+"Model 3.txt","s3","AGq",true,true,PASS
+"Model 3.txt","s4","AGq",true,true,PASS
+"Model 3.txt","s5","AGq",false,false,PASS
+"Model 3.txt","s6","AGq",false,false,PASS
+"Model 3.txt","s7","AGq",false,false,PASS
+"Model 3.txt","s8","AGq",true,true,PASS
+"Model 3.txt","s9","AGq",true,true,PASS
+"Model 3.txt","s10","AGq",true,true,PASS
+"Model 3.txt","s1","EGq",false,false,PASS
+"Model 3.txt","s2","EGq",false,false,PASS
+"Model 3.txt","s3","EGq",true,true,PASS
+"Model 3.txt","s4","EGq",true,true,PASS
+"Model 3.txt","s5","EGq",false,false,PASS
+"Model 3.txt","s6","EGq",false,false,PASS
+"Model 3.txt","s7","EGq",false,false,PASS
+"Model 3.txt","s8","EGq",true,true,PASS
+"Model 3.txt","s9","EGq",true,true,PASS
+"Model 3.txt","s10","EGq",true,true,PASS
+"Model 4.txt","s1","AG(t1 -> AF c1)",true,true,PASS
+"Model 4.txt","s2","AG(t1 -> AF c1)",true,true,PASS
+"Model 4.txt","s3","AG(t1 -> AF c1)",true,true,PASS
+"Model 4.txt","s4","AG(t1 -> AF c1)",true,true,PASS
+"Model 4.txt","s5","AG(t1 -> AF c1)",true,true,PASS
+"Model 4.txt","s6","AG(t1 -> AF c1)",true,true,PASS
+"Model 4.txt","s7","AG(t1 -> AF c1)",true,true,PASS
+"Model 4.txt","s8","AG(t1 -> AF c1)",true,true,PASS
+"Model 4.txt","s9","AG(t1 -> AF c1)",true,true,PASS
+"Model 5.txt","s1","AXp",true,true,PASS
+"Model 5.txt","s2","AXp",false,false,PASS
+"Model 5.txt","s3","AXp",false,false,PASS
+"Model 5.txt","s4","AXp",false,false,PASS
+"Model 5.txt","s5","AXp",false,false,PASS
+"Model 5.txt","s6","AXp",false,false,PASS
+"Model 5.txt","s7","AXp",false,false,PASS
+"Model 5.txt","s1","EXp",true,true,PASS
+"Model 5.txt","s2","EXp",true,true,PASS
+"Model 5.txt","s3","EXp",false,false,PASS
+"Model 5.txt","s4","EXp",false,false,PASS
+"Model 5.txt","s5","EXp",false,false,PASS
+"Model 5.txt","s6","EXp",false,false,PASS
+"Model 5.txt","s7","EXp",false,false,PASS
+"Model 6.txt","s1","AFp",false,false,PASS
+"Model 6.txt","s2","AFp",true,true,PASS
+"Model 6.txt","s3","AFp",false,false,PASS
+"Model 6.txt","s4","AFp",true,true,PASS
+"Model 6.txt","s5","AFp",true,true,PASS
+"Model 6.txt","s6","AFp",true,true,PASS
+"Model 6.txt","s7","AFp",false,false,PASS
+"Model 6.txt","s1","EFp",true,true,PASS
+"Model 6.txt","s2","EFp",true,true,PASS
+"Model 6.txt","s3","EFp",true,true,PASS
+"Model 6.txt","s4","EFp",true,true,PASS
+"Model 6.txt","s5","EFp",true,true,PASS
+"Model 6.txt","s6","EFp",true,true,PASS
+"Model 6.txt","s7","EFp",false,false,PASS
+"Model 7.txt","s1","A(p U q)",false,false,PASS
+"Model 7.txt","s2","A(p U q)",false,false,PASS
+"Model 7.txt","s3","A(p U q)",true,true,PASS
+"Model 7.txt","s4","A(p U q)",true,true,PASS
+"Model 7.txt","s5","A(p U q)",false,false,PASS
+"Model 7.txt","s6","A(p U q)",true,true,PASS
+"Model 7.txt","s7","A(p U q)",true,true,PASS
+"Model 7.txt","s1","E(p U q)",true,true,PASS
+"Model 7.txt","s2","E(p U q)",true,true,PASS
+"Model 7.txt","s3","E(p U q)",true,true,PASS
+"Model 7.txt","s4","E(p U q)",true,true,PASS
+"Model 7.txt","s5","E(p U q)",false,false,PASS
+"Model 7.txt","s6","E(p U q)",true,true,PASS
+"Model 7.txt","s7","E(p U q)",true,true,PASS
+"microwave.txt","s1","AG(Start -> AF Heat)",false,false,PASS
+"microwave.txt","s1","not EF(Start and EG not Heat)",false,false,PASS
+"microwave.txt","s1","EF(Start and EG not Heat)",true,true,PASS
+"microwave.txt","s1","EG not Heat",true,true,PASS
+"microwave.txt","s3","EG not Heat",true,true,PASS
+"microwave.txt","s2","EG not Heat",true,true,PASS
+"microwave.txt","s5","EG not Heat",true,true,PASS
+"microwave.txt","s4","EG not Heat",false,false,PASS
+"microwave.txt","s6","EG not Heat",false,false,PASS
+"microwave.txt","s7","EG not Heat",false,false,PASS
+"microwave.txt","s7","Heat",true,true,PASS
+"microwave.txt","s5","Error",true,true,PASS
+"microwave.txt","s6","EF Heat",true,true,PASS
