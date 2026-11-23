@@ -1,0 +1,35 @@
+CS 5392 R02 Formal Methods Software Engineering
+CTL Model Checker
+
+Team: Chang Oh, Bharghavi Ari, Tanha Tahseen 
+
+Software: Java 21 (17 or higher)
+
+Deliverables:
+
+1. Description of acceptance testcases
+test cases: CTL_AcceptanceTestCases.pdf
+test results: CTL_DetailedTestResults.csv
+
+2. Description of execution of acceptance testcases illustrated with screenshots of all the windows and pop-up windows of the system and console output along an acceptance testcase
+test screenshots: CTL_TestExecutionScreenshots.pdf
+test screenshots: CTL_TestScreenshots.pdf
+
+3. UML class diagram for the software system
+UML class diagram: CTL_UMLClassDiagram.pdf
+
+4. System statechart diagrams
+CTL_Statecharts.pdf
+
+4. Source code (archive of directory structure starting from modelCheckCTL dir)
+modelCheckCTL/
+	Main.java
+	model/
+		Formula.java
+		KripkeStructure.java
+		ModelChecker.java
+		State.java
+		Transition.java
+
+5. Prompts
+Prompts.pdf
