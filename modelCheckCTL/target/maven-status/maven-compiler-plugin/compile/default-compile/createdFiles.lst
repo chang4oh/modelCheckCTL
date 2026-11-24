@@ -1,0 +1,17 @@
+modelCheckCTL\model\ModelChecker.class
+modelCheckCTL\util\FormulaParser$Token.class
+modelCheckCTL\util\KripkeParser$Segment.class
+modelCheckCTL\model\ModelChecker$1.class
+modelCheckCTL\model\Transition.class
+modelCheckCTL\util\ModelFormatException.class
+modelCheckCTL\util\FormulaParser.class
+modelCheckCTL\Main.class
+modelCheckCTL\model\Formula$Op.class
+modelCheckCTL\util\FormulaParser$SyntaxException.class
+modelCheckCTL\model\Formula.class
+modelCheckCTL\util\KripkeParser.class
+modelCheckCTL\view\MainWindow.class
+modelCheckCTL\util\KripkeParser$Entry.class
+modelCheckCTL\controller\MainController.class
+modelCheckCTL\model\State.class
+modelCheckCTL\model\KripkeStructure.class
